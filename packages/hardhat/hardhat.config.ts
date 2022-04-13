@@ -19,7 +19,8 @@ import './tasks/addWethLiquidity'
 import './tasks/buySqueeth'
 import './tasks/buyWeth'
 import './tasks/increaseSlot'
-
+require("@nomiclabs/hardhat-ganache");
+require('@nomiclabs/hardhat-ethers')
 // Load env variables
 dotenv.config()
 const InfuraKey = process.env.INFURA_KEY
